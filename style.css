@@ -1,0 +1,82 @@
+:root{
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%)
+}
+body{
+  margin: 0;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 15px;
+  color: hsl(0, 0%, 95%);
+}
+.container{
+  width: 70%;
+  display: flex;
+  margin: 100px auto;
+  border-radius: 15px;
+}
+.cards{
+  width: 33.33%;
+  margin: 0;
+}
+.cards-1{
+  background: var(--Bright-orange);
+  border-radius: 15px 0 0 15px;
+}
+.cards-2{
+  background: var(--Dark-cyan);
+}
+.cards-3{
+  background: var(--Very-dark-cyan);
+  border-radius: 0 15px 15px 0;
+}
+.content{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+}
+h1{
+  text-transform: uppercase;
+}
+p{
+  width: 70%;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif
+}
+button{
+  width: 60%;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 40px;
+  margin: 30px 0;
+  font-family: 'Lexend Deca', sans-serif;
+  cursor: pointer;
+}
+.btn-1{
+  color: var(--Bright-orange);
+}
+.btn-2{
+  color: var(--Dark-cyan);
+}
+.btn-3{
+  color: var(--Very-dark-cyan);
+}
+@media (max-width:1024px) {
+  .container{
+    width: 80%;
+    flex-direction: column;
+  }
+  .cards{
+    width: 100%;
+  }
+  .content{
+    width: 80%;
+  }
+  .cards-1{
+    border-radius: 15px 15px 0 0;
+  }
+  .cards-3{
+    border-radius: 0 0  15px 15px;
+  }
+}
