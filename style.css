@@ -52,6 +52,7 @@ button{
   margin: 30px 0;
   font-family: 'Lexend Deca', sans-serif;
   cursor: pointer;
+  text-transform: capitalize;
 }
 .btn-1{
   color: var(--Bright-orange);
